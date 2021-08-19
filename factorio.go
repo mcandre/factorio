@@ -18,14 +18,17 @@ const Version = "0.0.1"
 // ArtifactToplevelDir names the output location for binaries.
 const ArtifactToplevelDir = "bin"
 
+// Banner names the default output subdirectory.
+const Banner = "artifact-dev"
+
 // PlatformBlocklist excludes some fragile targets.
 var PlatformBlocklist = regexp.MustCompile(`(android\/.*)|(ios\/.*)`)
 
-// ArtifactToplevelDirParameter controls the environment variable
-// for overriding the default ArtifactToplevelDir.
+// BannerParameter controls the environment variable
+// for overriding the default Banner subdirectory.
 //
-// Example configuration: FACTORIO_OUTPUT=bin/hello-0.0.1
-const ArtifactToplevelDirParameter = "FACTORIO_OUTPUT"
+// Example configuration: FACTORIO_BANNER=hello-0.0.1
+const BannerParameter = "FACTORIO_BANNER"
 
 // PlatformBlocklistParameter controls the environment variable
 // for overriding the default PlatformBlocklist.
@@ -92,16 +95,10 @@ func Build(platform Platform, artifactToplevelDir string, args []string) error {
 		return err
 	}
 
-	cwd, err := os.Getwd()
+	allPackagesPath := fmt.Sprintf(".%c...", os.PathSeparator)
 
-	if err != nil {
-		return err
-	}
-
-	allPackagesPath := fmt.Sprintf("%s%c%s", cwd, os.PathSeparator, "...")
 	cmd := exec.Command("go")
-	cmd.Dir = artifactDir
-	cmd.Args = []string{"go", "build"}
+	cmd.Args = []string{"go", "build", "-o", artifactDir}
 	cmd.Args = append(cmd.Args, args...)
 	cmd.Args = append(cmd.Args, allPackagesPath)
 	cmd.Env = os.Environ()
@@ -114,11 +111,13 @@ func Build(platform Platform, artifactToplevelDir string, args []string) error {
 
 // Port generates a multitude of binaries.
 func Port(args []string) error {
-	artifactToplevelDir, ok := os.LookupEnv(ArtifactToplevelDirParameter)
+	banner, ok := os.LookupEnv(BannerParameter)
 
 	if !ok {
-		artifactToplevelDir = ArtifactToplevelDir
+		banner = Banner
 	}
+
+	artifactToplevelDir := path.Join(ArtifactToplevelDir, banner)
 
 	platformBlocklist := PlatformBlocklist
 

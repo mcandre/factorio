@@ -11,9 +11,9 @@ $ tree bin
 bin
 ├── darwin
 │   ├── amd64
-│   │   └── hello
+│   │   └── factorio
 │   └── arm64
-│       └── hello
+│       └── factorio
 ...
 ```
 
@@ -49,7 +49,7 @@ For more information on developing factorio itself, see [DEVELOPMENT.md](DEVELOP
 
 # CONFIGURATION
 
-The default toplevel bin directory can be customized with a `FACTORIO_OUTPUT` environment variable, e.g. `FACTORIO_OUTPUT=bin/hello-0.0.1`. This is helpful when structuring file paths in prepraration for compressed archives, for example.
+The default subdirectory can be customized with a `FACTORIO_BANNER` environment variable, e.g. `FACTORIO_BANNER=hello-0.0.1`. Then artifacts will appear in `bin/hello-0.0.1/`. This is helpful when structuring file paths in prepraration for compressed archives, for example.
 
 factorio primarily assists conventional PC (desktop/laptop/workstation/server) applications. factorio enables the standard platforms expected to work out of the box for `go build`, particularly any pure Go project.
 
