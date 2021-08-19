@@ -38,7 +38,7 @@ https://github.com/mcandre/factorio/releases
 # INSTALL FROM SOURCE
 
 ```console
-$ go install github.com/mcandre/factorio/cmd/factorio
+$ go install github.com/mcandre/factorio/cmd/factorio@latest
 ```
 
 # RUNTIME REQUIREMENTS
