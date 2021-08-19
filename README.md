@@ -29,6 +29,10 @@ FreeBSD
 
 https://godoc.org/github.com/mcandre/factorio
 
+# DOWNLOAD
+
+https://github.com/mcandre/factorio/releases
+
 # INSTALL FROM SOURCE
 
 ```console
