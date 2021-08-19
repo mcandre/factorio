@@ -21,6 +21,8 @@ bin/artifact-dev
 
 factorio accelerates Go application development, by automating the process of generating binaries for a multitude of platforms. Your time is valuable. Spend it developing software, not tinkering with toolchains.
 
+factorio is fast. It has no intrinsic dependency on any containers or virtual machines. Factorio plugs directly into the standard `go` command line system.
+
 # LICENSE
 
 FreeBSD
@@ -59,7 +61,7 @@ factorio primarily assists conventional PC (desktop/laptop/workstation/server) a
 
 factorio will exclude mobile platforms by default. You can customize the platform blocklist by supplying a Go [Regexp](https://godoc.org/regexp) to a `FACTORIO_PLATFORM_BLOCKLIST` environment variable, e.g. `FACTORIO_PLATFORM_BLOCKLIST=//`.
 
-factorio plugs directly into the standard Go system, compatible with most `go build` flags and environment variables. Any Extra environment variables or flags you pass to `factorio` will propagate to `go build`.
+factorio is essentially compatible with `go build` flags and environment variables. Any Extra environment variables or flags you pass to `factorio` will propagate to `go build`.
 
 ## SEE ALSO
 
