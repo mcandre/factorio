@@ -7,8 +7,8 @@ $ cd example
 
 $ factorio
 
-$ tree bin
-bin
+$ tree bin/artifact-dev
+bin/artifact-dev
 ├── darwin
 │   ├── amd64
 │   │   └── factorio
