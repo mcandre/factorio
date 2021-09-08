@@ -68,4 +68,5 @@ factorio is essentially compatible with `go build` flags and environment variabl
 * [cartel](https://github.com/mcandre/cartel) ports native C/C++ applications to Linux variants.
 * [gox](https://github.com/mitchellh/gox), an older Go cross-compiler wrapper.
 * [tonixxx](https://github.com/mcandre/tonixxx) ports applications of any programming language.
+* [WASM](https://webassembly.org/) provides a portable interface for C/C++ code.
 * [xgo](https://github.com/karalabe/xgo) supports Go projects with native cgo dependencies.
