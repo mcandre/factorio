@@ -30,3 +30,9 @@ $ cd bin
 
 $ zip -r factorio-0.0.1.zip factorio-0.0.1
 ```
+
+# CLEAN
+
+```console
+$ rm -rf bin
+```
