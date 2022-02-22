@@ -1,4 +1,4 @@
-# factorio: mo' platforms, mo' problems!
+# factorio: Go cross-compiler
 
 # EXAMPLE
 
