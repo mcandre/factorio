@@ -1,7 +1,17 @@
 # BUILDTIME REQUIREMENTS
 
 * [Go](https://golang.org/) 1.17+
+
+## Recommended
+
+* [snyk](https://www.npmjs.com/package/snyk) 1.893.0 (`npm install -g snyk@1.893.0`)
 * [zip](https://linux.die.net/man/1/zip)
+
+# SECURITY AUDIT
+
+```console
+$ snyk test
+```
 
 # INSTALL
 
