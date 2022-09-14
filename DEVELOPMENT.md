@@ -13,6 +13,12 @@
 $ snyk test
 ```
 
+# SECURITY AUDIT
+
+```console
+$ snyk test
+```
+
 # INSTALL
 
 ```console
