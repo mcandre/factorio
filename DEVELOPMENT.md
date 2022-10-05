@@ -41,11 +41,11 @@ $ factorio
 # PORT
 
 ```console
-$ FACTORIO_BANNER=factorio-0.0.1 factorio
+$ FACTORIO_BANNER=factorio-0.0.2 factorio
 
 $ cd bin
 
-$ zip -r factorio-0.0.1.zip factorio-0.0.1
+$ zip -r factorio-0.0.2.zip factorio-0.0.2
 ```
 
 # CLEAN
