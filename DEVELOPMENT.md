@@ -1,6 +1,6 @@
 # BUILDTIME REQUIREMENTS
 
-* [Go](https://golang.org/) 1.17+
+* [Go](https://golang.org/) 1.19+
 
 ## Recommended
 
