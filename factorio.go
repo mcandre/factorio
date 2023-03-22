@@ -54,6 +54,7 @@ func (o Platform) String() string {
 	return fmt.Sprintf("%s/%s", o.Os, o.Arch)
 }
 
+// Platforms enumerates the available platform combinations.
 func Platforms() ([]Platform, error) {
 	var platforms []Platform
 
