@@ -12,9 +12,6 @@ import (
 	"strings"
 )
 
-// Version is semver.
-const Version = "0.0.2"
-
 // ArtifactToplevelDir names the output location for binaries.
 const ArtifactToplevelDir = "bin"
 
