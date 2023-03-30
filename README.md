@@ -65,7 +65,7 @@ factorio is essentially compatible with `go build` flags and environment variabl
 
 ## SEE ALSO
 
-* [cross](https://github.com/cross-rs/cross) generates Rust ports
+* [crit](https://github.com/mcandre/crit) generates Rust ports
 * [gox](https://github.com/mitchellh/gox), an older Go cross-compiler wrapper.
 * [LLVM](https://llvm.org/) bitcode offers an abstract assembler format for C/C++ code.
 * [snek](https://github.com/mcandre/snek) ports native C/C++ applications.
