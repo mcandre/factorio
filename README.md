@@ -69,7 +69,6 @@ factorio is essentially compatible with `go build` flags and environment variabl
 * [gox](https://github.com/mitchellh/gox), an older Go cross-compiler wrapper.
 * [LLVM](https://llvm.org/) bitcode offers an abstract assembler format for C/C++ code.
 * [snek](https://github.com/mcandre/snek) ports native C/C++ applications.
-* [tonixxx](https://github.com/mcandre/tonixxx) ports applications of any programming language.
 * [tug](https://github.com/mcandre/tug) automates multi-platform Docker image builds.
 * [WASM](https://webassembly.org/) provides a portable interface for C/C++ code.
 * [xgo](https://github.com/crazy-max/xgo) supports Go projects with native cgo dependencies.
