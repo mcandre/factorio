@@ -25,7 +25,7 @@ factorio is fast. It has no intrinsic dependency on any containers or virtual ma
 
 # LICENSE
 
-FreeBSD
+BSD-2-Clause
 
 # DOCUMENTATION
 
