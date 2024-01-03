@@ -1,10 +1,10 @@
 ---
-name: "Lint"
+name: "Test"
 on: # yamllint disable-line rule:truthy
   push:
   pull_request:
 jobs:
-  Lint:
+  Test:
     runs-on: "ubuntu-latest"
     env:
       GOPATH: "/home/runner/go"
