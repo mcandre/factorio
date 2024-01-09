@@ -1,11 +1,14 @@
 # BUILDTIME REQUIREMENTS
 
-* [Go](https://golang.org/) 1.21.5+
-* [Node.js](https://nodejs.org/en) 20.10.0+
-* [Rust](https://www.rust-lang.org/) 1.75.0+
-* [zip](https://linux.die.net/man/1/zip)
-* a POSIX compliant [make](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/make.html) implementation (e.g. GNU make, BSD make, etc.)
-* Provision additional dev tools with `make`
+* GNU [bash](https://www.gnu.org/software/bash/) 3+
+* POSIX compatible [findutils](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/find.html)
+* POSIX compatible [grep](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/grep.html)
+* POSIX compatible [sh](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/sh.html)
+* [ShellCheck](https://www.shellcheck.net/) 0.8.0+
+* [Go](https://go.dev/) 1.21.5+
+* [Python](https://www.python.org/) 3.12.1+
+* [zsh](https://www.zsh.org/) 5.8+
+* Provision additional dev tools with `./install`
 
 ## Recommended
 
@@ -15,35 +18,11 @@
 # AUDIT
 
 ```console
-$ mage audit
+$ ./build audit
 ```
 
-# INSTALL
+# LINT
 
 ```console
-$ mage install
-```
-
-# UNINSTALL
-
-```console
-$ mage uninstall
-```
-
-# TEST
-
-```console
-$ mage [test]
-```
-
-# PORT
-
-```console
-$ mage port
-```
-
-# CLEAN
-
-```console
-$ rm -rf bin
+$ ./build [lint]
 ```
