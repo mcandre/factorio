@@ -1,8 +1,4 @@
-github.com/jhoonb/archivex v0.0.0-20201016144719-6a343cdae81d h1:q7n+5taxmM+9T2Q7Ydo7YN90FkoDuR5bbzByZwkQqPo=
-github.com/jhoonb/archivex v0.0.0-20201016144719-6a343cdae81d/go.mod h1:GN1Mg/uXQ6qwXA0HypnUO3xlcQJS9/y68EsHNeuuRa4=
 github.com/magefile/mage v1.14.0 h1:6QDX3g6z1YvJ4olPhT1wksUcSa/V0a1B+pJb73fBjyo=
 github.com/magefile/mage v1.14.0/go.mod h1:z5UZb/iS3GoOSn0JgWuiw7dxlurVYTu+/jHXqQg881A=
-github.com/mcandre/mage-extras v0.0.13 h1:ZQIFTRCDtyYTYZQ2NGk+aDma+YE1jLCiSh9olBb+Qhs=
-github.com/mcandre/mage-extras v0.0.13/go.mod h1:3Q2v5MUDhiNsOHQSjRDq+u3QzjH+0g3eiI7nWsBFCFA=
-github.com/mcandre/zipc v0.0.7 h1:P5f4pB80jG0UFnn/C5Ex3gG2eilDAXtzgPmPXd+oUE8=
-github.com/mcandre/zipc v0.0.7/go.mod h1:oSG7tdqkZKlcTwzTmE5QXXM8TBkO2xwVzsOabVJ00KU=
+github.com/mcandre/mage-extras v0.0.15 h1:KAhXhhVp5EVoffvG5NVZg+Laxm33kn7qboREqCSIbS0=
+github.com/mcandre/mage-extras v0.0.15/go.mod h1:hLv+K9D95VO4RN5JjrdavK6KJB3IDrIZ0omn6GUcbtU=
