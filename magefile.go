@@ -6,7 +6,6 @@ package main
 import (
 	"fmt"
 	"os"
-	"os/exec"
 
 	"github.com/magefile/mage/mg"
 	"github.com/mcandre/factorio"
@@ -70,22 +69,10 @@ var portBasename = fmt.Sprintf("factorio-%s", factorio.Version)
 var repoNamespace = "github.com/mcandre/factorio"
 
 // Factorio cross-compiles Go binaries for a multitude of platforms.
-func Factorio() error { return mageextras.Factorio(portBasename) }
+func Factorio() error { mg.Deps(Install); return mageextras.Factorio(portBasename) }
 
 // Port builds and compresses artifacts.
-func Port() error {
-	cmd := exec.Command("factorio")
-	cmd.Env = append(
-		cmd.Environ(),
-		fmt.Sprintf("FACTORIO_BANNER=factorio-%v", factorio.Version),
-	)
-
-	if err := cmd.Run(); err != nil {
-		return err
-	}
-
-	return mageextras.Archive(portBasename, artifactsPath)
-}
+func Port() error { mg.Deps(Factorio); return mageextras.Archive(portBasename, artifactsPath) }
 
 // Test runs a test suite.
 func Test() error { mg.Deps(Port); return nil }
