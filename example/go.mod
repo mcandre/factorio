@@ -1,3 +1,3 @@
 module github.com/mcandre/factorio/example
 
-go 1.21
+go 1.23
