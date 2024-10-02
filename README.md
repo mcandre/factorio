@@ -43,7 +43,7 @@ $ go install github.com/mcandre/factorio/cmd/factorio@latest
 
 # RUNTIME REQUIREMENTS
 
-* [Go](https://go.dev/) 1.21.5+
+* [Go](https://go.dev/) 1.23.2+
 
 ## Recommended
 
