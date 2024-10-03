@@ -34,6 +34,9 @@ func Deadcode() error { return mageextras.Deadcode("./...") }
 // Gofmt runs gofmt.
 func GoFmt() error { return mageextras.GoFmt("-s", "-w") }
 
+// GoLint runs golint.
+func GoLint() error { return mageextras.GoLint() }
+
 // GoImports runs goimports.
 func GoImports() error { return mageextras.GoImports("-w") }
 
@@ -68,6 +71,7 @@ func Lint() error {
 	mg.Deps(Deadcode)
 	mg.Deps(GoFmt)
 	mg.Deps(GoImports)
+	mg.Deps(GoLint)
 	mg.Deps(GoVet)
 	mg.Deps(Errcheck)
 	mg.Deps(Nakedret)
