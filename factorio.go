@@ -1,3 +1,4 @@
+// Package factorio implements primitives for organizing Go cross-compilation.
 package factorio
 
 import (

@@ -1,3 +1,4 @@
+// Package main implements a tool for automating Go cross-compilation.
 package main
 
 import (

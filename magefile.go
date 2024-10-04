@@ -34,9 +34,6 @@ func Deadcode() error { return mageextras.Deadcode("./...") }
 // Gofmt runs gofmt.
 func GoFmt() error { return mageextras.GoFmt("-s", "-w") }
 
-// GoLint runs golint.
-func GoLint() error { return mageextras.GoLint() }
-
 // GoImports runs goimports.
 func GoImports() error { return mageextras.GoImports("-w") }
 
@@ -48,6 +45,9 @@ func Errcheck() error { return mageextras.Errcheck("-blank") }
 
 // Nakedret runs nakedret.
 func Nakedret() error { return mageextras.Nakedret("-l", "0") }
+
+// Revive runs revive.
+func Revive() error { return mageextras.Revive() }
 
 // Shadow runs go vet with shadow checks enabled.
 func Shadow() error { return mageextras.GoVetShadow() }
@@ -71,10 +71,10 @@ func Lint() error {
 	mg.Deps(Deadcode)
 	mg.Deps(GoFmt)
 	mg.Deps(GoImports)
-	mg.Deps(GoLint)
 	mg.Deps(GoVet)
 	mg.Deps(Errcheck)
 	mg.Deps(Nakedret)
+	mg.Deps(Revive)
 	mg.Deps(Shadow)
 	mg.Deps(Staticcheck)
 	mg.Deps(Unmake)
