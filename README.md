@@ -75,4 +75,4 @@ factorio is essentially compatible with `go build` flags and environment variabl
 * [LLVM](https://llvm.org/) bitcode offers an abstract assembler format for C/C++ code.
 * [tug](https://github.com/mcandre/tug) automates multi-platform Docker image builds.
 * [WASM](https://webassembly.org/) provides a portable interface for C/C++ code.
-* [xgo](https://github.com/crazy-max/xgo) supports Go projects with native cgo dependencies.
+* [xgo](https://github.com/techknowlogick/xgo) supports Go projects with native cgo dependencies.
