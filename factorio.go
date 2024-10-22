@@ -47,6 +47,17 @@ type Platform struct {
 	Arch string
 }
 
+// ParsePlatform constructs a platform from a string.
+func ParsePlatform(s string) (*Platform, error) {
+	parts := strings.Split(s, "/")
+
+	if len(parts) < 2 {
+		return nil, fmt.Errorf("cannot parse platform metadata: %v", s)
+	}
+
+	return &Platform{Os: parts[0], Arch: parts[1]}, nil
+}
+
 // String renders a platform.
 func (o Platform) String() string {
 	return fmt.Sprintf("%s/%s", o.Os, o.Arch)
@@ -72,13 +83,13 @@ func Platforms() ([]Platform, error) {
 
 	for scanner.Scan() {
 		line := scanner.Text()
-		parts := strings.Split(line, "/")
+		platform, err := ParsePlatform(line)
 
-		if len(parts) < 2 {
-			return platforms, fmt.Errorf("cannot parse platform metadata: %v", line)
+		if err != nil {
+			return platforms, err
 		}
 
-		platforms = append(platforms, Platform{Os: parts[0], Arch: parts[1]})
+		platforms = append(platforms, *platform)
 	}
 
 	return platforms, nil

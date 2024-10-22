@@ -94,7 +94,7 @@ func Factorio() error { mg.Deps(Install); return mageextras.Factorio(portBasenam
 func Port() error { mg.Deps(Factorio); return mageextras.Archive(portBasename, artifactsPath) }
 
 // Test runs a test suite.
-func Test() error { mg.Deps(Port); return nil }
+func Test() error { return mageextras.UnitTest() }
 
 // Install builds and installs Go applications.
 func Install() error { return mageextras.Install() }
