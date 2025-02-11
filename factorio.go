@@ -66,9 +66,7 @@ func (o Platform) String() string {
 // Platforms enumerates the available platform combinations.
 func Platforms() ([]Platform, error) {
 	var platforms []Platform
-
 	var distOut bytes.Buffer
-
 	cmd := exec.Command("go")
 	cmd.Args = []string{"go", "tool", "dist", "list"}
 	cmd.Stderr = os.Stderr
@@ -128,16 +126,14 @@ func Port(args []string) error {
 	}
 
 	artifactToplevelDir := path.Join(ArtifactToplevelDir, banner)
-
 	platformBlocklist := PlatformBlocklist
-
 	platformBlocklistPattern, ok := os.LookupEnv(PlatformBlocklistParameter)
 
 	if ok {
 		pb, err := regexp.Compile(platformBlocklistPattern)
 
 		if err != nil {
-			panic(err)
+			return err
 		}
 
 		platformBlocklist = pb
