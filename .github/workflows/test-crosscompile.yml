@@ -3,6 +3,7 @@ name: "Test-Crosscompile"
 on: # yamllint disable-line rule:truthy
   push:
   pull_request:
+  workflow_dispatch:
 jobs:
   Test-Crosscompile:
     runs-on: "ubuntu-24.04"

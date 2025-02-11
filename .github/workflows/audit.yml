@@ -5,21 +5,24 @@ on: # yamllint disable-line rule:truthy
   pull_request:
   schedule:
   - cron: "0 0 * * 1"
+  workflow_dispatch:
 jobs:
   Audit:
     runs-on: "ubuntu-24.04"
     env:
       SNYK_TOKEN: "${{ secrets.SNYK_TOKEN }}"
     steps:
+    - uses: "actions/checkout@v4"
     - uses: "actions/setup-go@v5"
       with:
         go-version: "1.24.0"
-    - uses: "actions/checkout@v4"
-    - run: |
+    - name: "provision go"
+      run: "go install tool"
+    - name: "install snyk"
+      run: |
         sudo apt-get update
-        sudo apt-get install -y cargo curl
+        sudo apt-get install -y curl
         curl -LO https://downloads.snyk.io/cli/stable/snyk-linux
         sudo cp snyk-linux /bin/snyk
         sudo chmod a+x /bin/snyk
-        make -j 4 go
-        mage audit
+    - run: "mage audit"
