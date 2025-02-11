@@ -1,6 +1,7 @@
 # BUILDTIME REQUIREMENTS
 
 * [Go](https://go.dev/) 1.24.0+
+* [govulncheck](https://pkg.go.dev/golang.org/x/vuln/cmd/govulncheck) (`go install golang.org/x/vuln/cmd/govulncheck@latest`)
 * [Snyk](https://snyk.io/)
 * POSIX compatible [tar](https://pubs.opengroup.org/onlinepubs/7908799/xcu/tar.html)
 * Provision additional dev tools with `go install tool`

@@ -42,6 +42,5 @@ tool (
 	golang.org/x/tools/cmd/deadcode
 	golang.org/x/tools/cmd/goimports
 	golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow
-	golang.org/x/vuln/cmd/govulncheck
 	honnef.co/go/tools/cmd/staticcheck
 )
