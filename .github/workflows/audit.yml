@@ -17,9 +17,7 @@ jobs:
       with:
         go-version: "1.24.0"
     - name: "provision go"
-      run: |
-        go install tool
-        go install golang.org/x/vuln/cmd/govulncheck@latest
+      run: "make go"
     - name: "install snyk"
       run: |
         curl -LO https://downloads.snyk.io/cli/stable/snyk-linux

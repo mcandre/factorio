@@ -30,7 +30,6 @@ require (
 	golang.org/x/telemetry v0.0.0-20240522233618-39ace7a40ae7 // indirect
 	golang.org/x/text v0.21.0 // indirect
 	golang.org/x/tools v0.30.0 // indirect
-	golang.org/x/vuln v1.1.4 // indirect
 	honnef.co/go/tools v0.6.0 // indirect
 )
 
@@ -40,7 +39,5 @@ tool (
 	github.com/magefile/mage
 	github.com/mgechev/revive
 	golang.org/x/tools/cmd/deadcode
-	golang.org/x/tools/cmd/goimports
-	golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow
 	honnef.co/go/tools/cmd/staticcheck
 )
