@@ -11,6 +11,7 @@
 
 * [ASDF](https://asdf-vm.com/) 0.10 (run `asdf reshim` after provisioning)
 * [direnv](https://direnv.net/) 2
+* [GNU](https://www.gnu.org/)/[BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) make
 * a UNIX environment, such as macOS, Linux, BSD, [WSL](https://learn.microsoft.com/en-us/windows/wsl/), etc.
 
 Non-UNIX environments may produce subtle adverse effects when linting or generating application ports.
