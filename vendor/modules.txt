@@ -87,15 +87,6 @@ golang.org/x/sys/unix
 golang.org/x/sys/windows
 # golang.org/x/telemetry v0.0.0-20240522233618-39ace7a40ae7
 ## explicit; go 1.20
-golang.org/x/telemetry
-golang.org/x/telemetry/counter
-golang.org/x/telemetry/internal/config
-golang.org/x/telemetry/internal/configstore
-golang.org/x/telemetry/internal/counter
-golang.org/x/telemetry/internal/crashmonitor
-golang.org/x/telemetry/internal/mmap
-golang.org/x/telemetry/internal/telemetry
-golang.org/x/telemetry/internal/upload
 # golang.org/x/text v0.22.0
 ## explicit; go 1.18
 golang.org/x/text/runes
@@ -103,7 +94,6 @@ golang.org/x/text/transform
 golang.org/x/text/unicode/norm
 # golang.org/x/tools v0.30.0
 ## explicit; go 1.22.0
-golang.org/x/tools/cmd/deadcode
 golang.org/x/tools/go/analysis
 golang.org/x/tools/go/analysis/checker
 golang.org/x/tools/go/analysis/internal
@@ -115,14 +105,10 @@ golang.org/x/tools/go/analysis/unitchecker
 golang.org/x/tools/go/ast/astutil
 golang.org/x/tools/go/ast/inspector
 golang.org/x/tools/go/buildutil
-golang.org/x/tools/go/callgraph
-golang.org/x/tools/go/callgraph/rta
 golang.org/x/tools/go/gcexportdata
 golang.org/x/tools/go/internal/cgo
 golang.org/x/tools/go/loader
 golang.org/x/tools/go/packages
-golang.org/x/tools/go/ssa
-golang.org/x/tools/go/ssa/ssautil
 golang.org/x/tools/go/types/objectpath
 golang.org/x/tools/go/types/typeutil
 golang.org/x/tools/internal/aliases

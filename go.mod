@@ -27,7 +27,6 @@ require (
 	golang.org/x/mod v0.23.0 // indirect
 	golang.org/x/sync v0.11.0 // indirect
 	golang.org/x/sys v0.30.0 // indirect
-	golang.org/x/telemetry v0.0.0-20240522233618-39ace7a40ae7 // indirect
 	golang.org/x/text v0.22.0 // indirect
 	golang.org/x/tools v0.30.0 // indirect
 	honnef.co/go/tools v0.6.0 // indirect
@@ -38,6 +37,5 @@ tool (
 	github.com/kisielk/errcheck
 	github.com/magefile/mage
 	github.com/mgechev/revive
-	golang.org/x/tools/cmd/deadcode
 	honnef.co/go/tools/cmd/staticcheck
 )
