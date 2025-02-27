@@ -2,8 +2,8 @@
 ## explicit; go 1.18
 github.com/BurntSushi/toml
 github.com/BurntSushi/toml/internal
-# github.com/alexkohler/nakedret/v2 v2.0.5
-## explicit; go 1.21
+# github.com/alexkohler/nakedret/v2 v2.0.5 => github.com/aep-sunlife/nakedret/v2 v2.0.0-20250227175454-3fb3a0f5caba
+## explicit; go 1.22.0
 github.com/alexkohler/nakedret/v2
 github.com/alexkohler/nakedret/v2/cmd/nakedret
 # github.com/chavacava/garif v0.1.0
@@ -85,8 +85,6 @@ golang.org/x/sync/errgroup
 ## explicit; go 1.18
 golang.org/x/sys/unix
 golang.org/x/sys/windows
-# golang.org/x/telemetry v0.0.0-20240522233618-39ace7a40ae7
-## explicit; go 1.20
 # golang.org/x/text v0.22.0
 ## explicit; go 1.18
 golang.org/x/text/runes
