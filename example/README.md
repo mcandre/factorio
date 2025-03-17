@@ -9,7 +9,7 @@ Hello World!
 
 # REQUIREMENTS
 
-* [Go](https://golang.org/) 1.24.0+
+* [Go](https://golang.org/) 1.24.1+
 
 ## Recommended
 
