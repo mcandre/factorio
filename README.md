@@ -47,13 +47,13 @@ $ go install github.com/mcandre/factorio/cmd/factorio@latest
 
 ## Recommended
 
-* POSIX compatible [tar](https://pubs.opengroup.org/onlinepubs/7908799/xcu/tar.html)
-* [tree](https://linux.die.net/man/1/tree)
-* a UNIX environment, such as macOS, Linux, BSD, [WSL](https://learn.microsoft.com/en-us/windows/wsl/), etc.
+* [GNU](https://www.gnu.org/)/[BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution) [tar](https://en.wikipedia.org/wiki/Tar_(computing))
+* [tree](https://en.wikipedia.org/wiki/Tree_(command))
+* a [UNIX](https://en.wikipedia.org/wiki/Unix)-like environment
 
 tar is a portable archiver suitable for creating `*.tgz` tarball archives. Users can then download the tarball and extract the executable relevant to their platform. Tarballs are especially well suited for use in Docker containers, as the tar command is more likely to be installed than unzip.
 
-Note that non-UNIX file systems may not preserve crucial chmod acl bits during port generation. This can corrupt downstream artifacts, such as compressed archives and installation procedures.
+Note that non-UNIX file systems may not preserve crucial chmod ACL bits during port generation. This can corrupt downstream artifacts, such as compressed archives and installation procedures.
 
 # CONTRIBUTING
 
