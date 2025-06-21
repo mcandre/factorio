@@ -4,7 +4,7 @@ go 1.24.4
 
 require (
 	github.com/magefile/mage v1.15.0
-	github.com/mcandre/mage-extras v0.0.23
+	github.com/mcandre/mage-extras v0.0.24
 )
 
 require (
