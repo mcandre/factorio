@@ -1,10 +1,10 @@
 module github.com/mcandre/factorio
 
-go 1.24.4
+go 1.24.5
 
 require (
 	github.com/magefile/mage v1.15.0
-	github.com/mcandre/mage-extras v0.0.25
+	github.com/mcandre/mage-extras v0.0.26
 )
 
 require (
