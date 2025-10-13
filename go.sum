@@ -8,8 +8,8 @@ github.com/kisielk/errcheck v1.9.0 h1:9xt1zI9EBfcYBvdU1nVrzMzzUPUtPKs9bVSIM3TAb3
 github.com/kisielk/errcheck v1.9.0/go.mod h1:kQxWMMVZgIkDq7U8xtG/n2juOjbLgZtedi0D+/VL/i8=
 github.com/magefile/mage v1.15.0 h1:BvGheCMAsG3bWUDbZ8AyXXpCNwU9u5CB6sM+HNb9HYg=
 github.com/magefile/mage v1.15.0/go.mod h1:z5UZb/iS3GoOSn0JgWuiw7dxlurVYTu+/jHXqQg881A=
-github.com/mcandre/mage-extras v0.0.26 h1:zsE6CJImDnnjkoB1P4lFJtQ1I/vftmStmDJFEFlHIoY=
-github.com/mcandre/mage-extras v0.0.26/go.mod h1:bwHAsNdpYsdpgYNAvlFjuS34fDHlTNcsHyQKJUg4HYw=
+github.com/mcandre/mage-extras v0.0.27 h1:43wPEAvjXLHgd/kCMWbj22nYZYk9/qs1sVmWS6YANac=
+github.com/mcandre/mage-extras v0.0.27/go.mod h1:bNK0QxH165F36o9rxiBlQ3k4lY5ozAw7sPIJ6P6MozI=
 golang.org/x/exp/typeparams v0.0.0-20250408133849-7e4ce0ab07d0 h1:oMe07YcizemJ09rs2kRkFYAp0pt4e1lYLwPWiEGMpXE=
 golang.org/x/exp/typeparams v0.0.0-20250408133849-7e4ce0ab07d0/go.mod h1:LKZHyeOpPuZcMgxeHjJp4p5yvxrCX1xDvH10zYHhjjQ=
 golang.org/x/mod v0.24.0 h1:ZfthKaKaT4NrhGVZHO1/WDTwGES4De8KtWO0SIbNJMU=
