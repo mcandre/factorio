@@ -1,11 +1,10 @@
 # BUILDTIME REQUIREMENTS
 
+* a UNIX-like environment (e.g. [WSL](https://learn.microsoft.com/en-us/windows/wsl/))
 * [Go](https://go.dev/) 1.24.6+
-* [POSIX](https://pubs.opengroup.org/onlinepubs/9799919799/) compatible [make](https://en.wikipedia.org/wiki/Make_(software))
-* [Rust](https://www.rust-lang.org/) 1.87.0+
 * [Snyk](https://snyk.io/)
 * [POSIX](https://pubs.opengroup.org/onlinepubs/9799919799/) compatible [tar](https://en.wikipedia.org/wiki/Tar_(computing))
-* Provision additional dev tools with `make [-j 4]`
+* Provision additional dev tools with `./install`
 
 ## Recommended
 
