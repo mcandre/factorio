@@ -1,5 +1,23 @@
 # factorio: Go cross-compiler
 
+[![Donate](https://img.shields.io/badge/GUMROAD-36a9ae?style=flat&logo=gumroad&logoColor=white)](https://mcandre.gumroad.com/)
+
+```text
+    /)        _/_
+   // __.  _. /  __ __  o __
+  //_(_/|_(__<__(_)/ (_<_(_)
+ />
+</
+```
+
+# ABOUT
+
+factorio accelerates Go application development, by automating the process of generating binaries for a multitude of platforms. Your time is valuable. Spend it developing software, not tinkering with toolchains.
+
+factorio is fast. It has no intrinsic dependency on any containers or virtual machines. Factorio plugs directly into the standard `go` command line system.
+
+No relation to the video game *Factorio*.
+
 # EXAMPLE
 
 ```console
@@ -16,12 +34,6 @@ bin/artifact-dev
 │       └── factorio
 ...
 ```
-
-# ABOUT
-
-factorio accelerates Go application development, by automating the process of generating binaries for a multitude of platforms. Your time is valuable. Spend it developing software, not tinkering with toolchains.
-
-factorio is fast. It has no intrinsic dependency on any containers or virtual machines. Factorio plugs directly into the standard `go` command line system.
 
 # LICENSE
 
