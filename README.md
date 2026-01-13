@@ -59,21 +59,30 @@ https://github.com/mcandre/factorio/releases
 
 ## Docker
 
-```console
-$ docker pull n4jm4/factorio
+```sh
+docker pull n4jm4/factorio
 ```
 
-## Remote Source
+## go mod
 
-```console
-$ go install github.com/mcandre/factorio/cmd/factorio@latest
+```sh
+go get -tool github.com/mcandre/factorio/cmd/factorio@v0.0.17
+go mod tidy
 ```
 
-## Local Source
+Optional:
 
-```console
-$ go install ./...
+```sh
+go mod vendor
 ```
+
+## Compile from Source
+
+```sh
+go install ./...
+```
+
+For more information on developing factorio itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
 
 # RUNTIME REQUIREMENTS
 
@@ -88,10 +97,6 @@ $ go install ./...
 tar is a portable archiver suitable for creating `*.tgz` tarball archives. Users can then download the tarball and extract the executable relevant to their platform. Tarballs are especially well suited for use in Docker containers, as the tar command is more likely to be installed than unzip.
 
 Note that non-UNIX file systems may not preserve crucial chmod ACL bits during port generation. This can corrupt downstream artifacts, such as compressed archives and installation procedures.
-
-# CONTRIBUTING
-
-For more information on developing factorio itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
 
 # CONFIGURATION
 
