@@ -76,7 +76,7 @@ Optional:
 go mod vendor
 ```
 
-## Compile from Source
+## Build from Source
 
 ```sh
 go install ./...
