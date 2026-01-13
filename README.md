@@ -43,18 +43,36 @@ BSD-2-Clause
 
 https://pkg.go.dev/github.com/mcandre/factorio
 
-# DOCKER HUB
+# INSTALL
 
-https://hub.docker.com/r/n4jm4/factorio
+We support several installation methods.
 
-# DOWNLOAD
+## Precompiled Binaries
 
 https://github.com/mcandre/factorio/releases
 
-# INSTALL FROM SOURCE
+1. Download release archive.
+2. Extract archive.
+3. Select executables for your target platform.
+4. Copy executabless to a convenient location, e.g. `$HOME/bin`.
+5. Ensure location is registered in `$PATH`.
+
+## Docker
+
+```console
+$ docker pull n4jm4/factorio
+```
+
+## Remote Source
 
 ```console
 $ go install github.com/mcandre/factorio/cmd/factorio@latest
+```
+
+## Local Source
+
+```console
+$ go install ./...
 ```
 
 # RUNTIME REQUIREMENTS
