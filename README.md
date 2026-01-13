@@ -39,7 +39,7 @@ bin/artifact-dev
 
 BSD-2-Clause
 
-# DOCUMENTATION
+# API DOCUMENTATION
 
 https://pkg.go.dev/github.com/mcandre/factorio
 
