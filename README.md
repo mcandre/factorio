@@ -66,7 +66,7 @@ docker pull n4jm4/factorio
 ## go mod
 
 ```sh
-go get -tool github.com/mcandre/factorio/cmd/factorio@v0.0.17
+go get -tool github.com/mcandre/factorio/cmd/factorio
 go mod tidy
 ```
 
