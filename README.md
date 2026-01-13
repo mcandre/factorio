@@ -43,50 +43,9 @@ BSD-2-Clause
 
 https://pkg.go.dev/github.com/mcandre/factorio
 
-# INSTALL
+# INSTALLATION
 
-We support several installation methods.
-
-## Precompiled Binaries
-
-https://github.com/mcandre/factorio/releases
-
-1. Download release archive.
-2. Extract archive.
-3. Select executables for your target platform.
-4. Copy executabless to a convenient location, e.g. `$HOME/bin`.
-5. Ensure location is registered in `$PATH`.
-
-## Docker
-
-```sh
-docker pull n4jm4/factorio
-```
-
-## go mod
-
-```sh
-go get -tool github.com/mcandre/factorio/cmd/factorio
-go mod tidy
-```
-
-Optional:
-
-```sh
-go mod vendor
-```
-
-## Build from Source
-
-```sh
-go install ./...
-```
-
-For more information on developing factorio itself, see [DEVELOPMENT.md](DEVELOPMENT.md).
-
-# RUNTIME REQUIREMENTS
-
-* [Go](https://go.dev/) 1.25.4+
+See [INSTALL.md](INSTALL.md).
 
 ## Recommended
 
