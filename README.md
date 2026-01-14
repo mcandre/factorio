@@ -8,7 +8,7 @@
 </
 ```
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/n4jm4/factorio)](https://hub.docker.com/r/n4jm4/factorio) [![Donate](https://img.shields.io/badge/GUMROAD-36a9ae?style=flat&logo=gumroad&logoColor=white)](https://mcandre.gumroad.com/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/n4jm4/factorio)](https://hub.docker.com/r/n4jm4/factorio) [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white)](https://pkg.go.dev/github.com/mcandre/factorio) ![license](https://img.shields.io/badge/license-BSD-3) [![Donate](https://img.shields.io/badge/GUMROAD-36a9ae?style=flat&logo=gumroad&logoColor=white)](https://mcandre.gumroad.com/)
 
 # ABOUT
 
@@ -34,14 +34,6 @@ bin/artifact-dev
 │       └── factorio
 ...
 ```
-
-# LICENSE
-
-BSD-2-Clause
-
-# API DOCUMENTATION
-
-https://pkg.go.dev/github.com/mcandre/factorio
 
 # INSTALLATION
 
