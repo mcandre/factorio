@@ -1,7 +1,5 @@
 # factorio: Go cross-compiler
 
-[![Donate](https://img.shields.io/badge/GUMROAD-36a9ae?style=flat&logo=gumroad&logoColor=white)](https://mcandre.gumroad.com/)
-
 ```text
     /)        _/_
    // __.  _. /  __ __  o __
@@ -9,6 +7,8 @@
  />
 </
 ```
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/n4jm4/factorio)](https://hub.docker.com/r/n4jm4/factorio) [![Donate](https://img.shields.io/badge/GUMROAD-36a9ae?style=flat&logo=gumroad&logoColor=white)](https://mcandre.gumroad.com/)
 
 # ABOUT
 
